@@ -1,10 +1,10 @@
 <div align="center">
 
-# ZeoWeather
+# RuleEngine
 
 </div>
 
-This repository contains a full-stack project developed using the MERN stack (MongoDB, Express.js, React, and Node.js) that fetches local weather data from weather API and displays it on the dashboard. Moreover it includes following features as well :-
+This repository contains a full-stack project developed using Node.js with TypeScript, Next.js with TypeScript, and PostgreSQL with Prisma. The project focuses on creating a Rule Engine with Abstract Syntax Tree (AST) for defining and evaluating complex business rules. Moreover it includes following features as well :-
 
 1. Daily Weather Summary:
 ○ Roll up the weather data for each day.
@@ -26,20 +26,43 @@ system (implementation details left open-ended).
 
 ## Frontend
 
-The frontend of this project is meticulously crafted using React, a powerful JavaScript library. It serves as the backbone of the application, handling routing and rendering of multiple sub-components, including the visually appealing dashboard page, welcoming page, and the intuitive login/register pages. These pages are thoughtfully designed utilizing a blend of HTML, CSS, and JavaScript, ensuring an engaging and seamless user experience.
+The frontend is built using Next.js with TypeScript, providing server-side rendering and static site generation. It includes pages for managing rules and visualizing rule evaluations.
 
-To fetch data from the Weather API and interact with the MongoDB database, the project leverages the Axios library. Axios provides a convenient and efficient way to make GET/POST requests, facilitating the retrieval and manipulation of data in a secure manner. By integrating Axios, the frontend seamlessly communicates with the backend, enabling smooth data exchange between the application and external APIs.
+Next.js: Handles routing and rendering of components.
+TypeScript: Ensures type safety and better development experience.
+Styled Components: For styling the application with ease.
 
 ## Backend
 
-The backend of this project is built using Express.js and Node.js, serving as a robust bridge between the React frontend and the database. It enables seamless communication and facilitates the retrieval of weather data by leveraging Express's powerful GET/POST functionality.
+The backend is developed using Node.js with TypeScript, acting as the core engine for rule evaluation and management. It interacts with the PostgreSQL database using Prisma.
 
-For efficient data storage and management, the project utilizes a MongoDB database hosted on MongoDB Atlas. The database consists of four collections: "Active Users" for currently logged-in users and "Registered Users" for storing details of registered users like name, email, password, and city, "Daily Weather Data" to store Daily aggregates and rollups, "Hourly Weather Data" to store Hourly temperatures and others.
+Node.js: Provides a robust and scalable runtime environment.
+TypeScript: Ensures type safety and maintainability.
+Express.js: Handles API requests and serves the frontend.
+Prisma: ORM for PostgreSQL, enabling efficient data querying and management.
+
+## Database
+
+The project uses PostgreSQL for reliable and efficient data storage. Prisma ORM is used to interact with the database, providing a type-safe and intuitive API for database operations.
 
 ## Installation and Setup
 
 
 # Running App
+
+**Frontend-side Application**
+
+```bash
+  cd frontend
+```
+
+```bash
+  npm install
+```
+
+```bash
+  npm run dev
+```
 
 **Backend-side Application**
 
@@ -52,53 +75,24 @@ For efficient data storage and management, the project utilizes a MongoDB databa
 ```
 
 ```bash
-  npm run dev
-```
-
-**Client-side Application**
-
-```bash
-  cd server
-```
-
-```bash
-  npm install
-```
-
-```bash
   npm start
 ```
+
+## Video Explanation Of The Assignment
+
+Please visit : [Video Explanation](https://drive.google.com/file/d/1Gmr292HTE99D8xuSmoLqQz1bbKAwzD9h/view?usp=sharing).
 
 
 
 ## Tech Stack
 
-**Frontend:** React
+**Frontend:** Next.js, TypeScript
 
-**Backend:** Node, Express 
+**Backend:** Node.js, TypeScript, Express.js
 
-**Database:** MongoDB
+**Database:** PostgreSQL, Prisma
 
 
 ## Feedback
 
 If you have any feedback, please reach out to me at ahujad2808@gmail.com
-
-
-## Installation
-
-Install WeatherSense with npm after cloning the project
-
-```bash
-npm Install
-```
-    
-## Documentation
-
-[React Framework](https://react.dev/)
-
-[Express JS](https://expressjs.com/)
-
-[MongoDB](https://www.mongodb.com/)
-
-[Axios](https://axios-http.com/)
