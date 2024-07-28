@@ -8,6 +8,7 @@
 This repository contains a full-stack project developed using the MERN stack (MongoDB, Express.js, React, and Node.js) that fetches local weather data from weather API and displays it on the dashboard. Moreover it includes following features as well :-
 
 ● Error handling for invalid rule strings or data formats (e.g., missing operators, invalid comparisons).
+
 ● Validations for attributes to be part of a catalog.
 
 
