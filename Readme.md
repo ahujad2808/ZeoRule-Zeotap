@@ -4,24 +4,11 @@
 
 </div>
 
-This repository contains a full-stack project developed using Node.js with TypeScript, Next.js with TypeScript, and PostgreSQL with Prisma. The project focuses on creating a Rule Engine with Abstract Syntax Tree (AST) for defining and evaluating complex business rules. Moreover it includes following features as well :-
 
-1. Daily Weather Summary:
-○ Roll up the weather data for each day.
-○ Calculate daily aggregates for:
-■ Average temperature
-■ Maximum temperature
-■ Minimum temperature
-■ Dominant weather condition (give reason on this)
-○ Store the daily summaries in a database or persistent storage for further analysis.
-2. Alerting Thresholds:
-○ Define user-configurable thresholds for temperature or specific weather conditions (e.g., alert if temperature exceeds 35 degrees Celsius for two consecutive updates).
-○ Continuously track the latest weather data and compare it with the thresholds.
-○ If a threshold is breached, trigger an alert for the current weather conditions.
-Alerts could be displayed on the console or sent through an email notification
-system (implementation details left open-ended).
-3. Implement visualizations:
-○ To display daily weather summaries, historical trends, and triggered alerts.
+This repository contains a full-stack project developed using the MERN stack (MongoDB, Express.js, React, and Node.js) that fetches local weather data from weather API and displays it on the dashboard. Moreover it includes following features as well :-
+
+● Error handling for invalid rule strings or data formats (e.g., missing operators, invalid comparisons).
+● Validations for attributes to be part of a catalog.
 
 
 ## Frontend
